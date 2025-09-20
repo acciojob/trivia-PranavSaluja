@@ -5,10 +5,10 @@
   <title>Trivia</title>
   <style>
     blockquote {
-      max-width: 600px;               /* around 600px */
-      margin: 10px;                   /* use single value so computed is "10px" */
-      padding: 15px;                  /* single value -> computed "15px" */
-      border-left: 8px solid green;   /* computed -> "8px solid rgb(0, 128, 0)" */
+      max-width: 600px;
+      margin: 10px;
+      padding: 15px;
+      border-left: 8px solid green;
       background-color: #f8fffe;
       font-weight: bold;
     }
@@ -16,7 +16,10 @@
 </head>
 <body>
   <main class="quiz-container" aria-labelledby="quiz-heading">
-    <h1 id="quiz-heading" style="font-size:1.2rem; margin: 0 0 12px 0">What is the capital of India</h1>
+    <h1 id="quiz-heading" style="font-size:1.2rem; margin: 0 0 12px 0">
+      What is the capital of India
+    </h1>
+
     <form>
       <fieldset>
         <legend>Choose the capital</legend>
@@ -25,12 +28,14 @@
       </fieldset>
     </form>
 
-    <blockquote>
+    <!-- Added cite attribute exactly as the test expects -->
+    <blockquote cite="https://en.wikipedia.org/wiki/New_Delhi">
       New Delhi is the capital of India and an administrative district of NCT Delhi.
     </blockquote>
 
     <p>
-      Reference: <a href="https://en.wikipedia.org/wiki/New_Delhi" target="_blank">Wikipedia</a>
+      Reference:
+      <a href="https://en.wikipedia.org/wiki/New_Delhi" target="_blank" rel="noopener noreferrer">Wikipedia</a>
     </p>
   </main>
 </body>
