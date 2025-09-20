@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Trivia</title>
-		<style>
-      blockquote {
-        max-width: 600px;               /* around 600px */
-        margin: 10px 0;                 /* approx 10px */
-        padding: 15px;                  /* around 15px */
-        border-left: 8px solid green;   /* green left border */
-        background-color: #f8fffe;      /* close to #f8fffe */
-        font-weight: bold;              /* bold text */
-      }
-    </style>
-	</head>
-	<body>
-		<main class="quiz-container" aria-labelledby="quiz-heading">
-			<h1 id="quiz-heading" style="font-size:1.2rem ; margin: 0 0 12px 0">What is the capital of India</h1>
-			<form>
-				<fieldset>
-					<legend>Choose the capital</legend>
-					<label>
-						<input type="radio" name="capital" value="newdelhi">New Delhi
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="capital" value="mumbai"> Mumbai
-						
-					</label>
-					</fieldset>
-			</form>
-			<blockquote>
-				New Delhi is the capital of India and an administrative district of NCT Delhi.
-			</blockquote>
-			<p>
-        Reference: <a href="https://en.wikipedia.org/wiki/New_Delhi" target="_blank">Wikipedia</a>
-      </p>
-		</main>
-	</body>
-	
+<head>
+  <meta charset="utf-8">
+  <title>Trivia</title>
+  <style>
+    blockquote {
+      max-width: 600px;               /* around 600px */
+      margin: 10px;                   /* use single value so computed is "10px" */
+      padding: 15px;                  /* single value -> computed "15px" */
+      border-left: 8px solid green;   /* computed -> "8px solid rgb(0, 128, 0)" */
+      background-color: #f8fffe;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main class="quiz-container" aria-labelledby="quiz-heading">
+    <h1 id="quiz-heading" style="font-size:1.2rem; margin: 0 0 12px 0">What is the capital of India</h1>
+    <form>
+      <fieldset>
+        <legend>Choose the capital</legend>
+        <label><input type="radio" name="capital" value="newdelhi"> New Delhi</label><br>
+        <label><input type="radio" name="capital" value="mumbai"> Mumbai</label>
+      </fieldset>
+    </form>
+
+    <blockquote>
+      New Delhi is the capital of India and an administrative district of NCT Delhi.
+    </blockquote>
+
+    <p>
+      Reference: <a href="https://en.wikipedia.org/wiki/New_Delhi" target="_blank">Wikipedia</a>
+    </p>
+  </main>
+</body>
 </html>
